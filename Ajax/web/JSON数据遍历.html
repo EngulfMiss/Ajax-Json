@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>json数据语法</title>
+    <script>
+        //1.基本定义格式
+        var person = {"name":"Gnar",age:7,'gender':true};
+
+        var ps = [{"name":"张三","age":23,"gender":true},
+                {"name":"李四","age":26,"gender":false},
+                {"name":"王五","age":33,"gender":true}];
+
+        //获取person对象中所有的键和值
+        //for in 循环
+        /*for(var key in person){
+            //这种方式是获取不到数据的，因为相当于 person."name"
+            //alert(key + ":" + person.key);  //键的字符串格式
+            alert(key + ":" + person[key]);
+        }*/
+
+        //获取ps数组中的所有数据
+        for(var i = 0;i < ps.length;i++){
+            var p = ps[i];
+            for(var key in p){
+                alert(key + ":" + p[key]);
+            }
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

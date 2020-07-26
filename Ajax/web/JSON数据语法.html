@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>json数据语法</title>
+    <script>
+        //1.基本定义格式
+        var person = {"name":"Gnar",age:7,'gender':true};
+
+        /*var name = person.name;
+        alert(name);
+
+        var age = person["age"];
+        alert(age);*/
+
+        //alert(person);
+        //2.嵌套格式   {} -> []
+        var persons = {"persons":[
+            {"name":"张三","age":23,"gender":true},
+            {"name":"李四","age":26,"gender":false},
+            {"name":"王五","age":33,"gender":true}
+            ]};
+        //alert(persons);
+        //获取数组中的name为王五的值
+        /*var name1 = persons.persons[2].name;
+        alert(name1);*/
+
+
+        //嵌套格式    [] -> {}
+        var ps = [{"name":"张三","age":23,"gender":true},
+                {"name":"李四","age":26,"gender":false},
+                {"name":"王五","age":33,"gender":true}];
+        //alert(ps);
+        alert(ps[1].name);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
